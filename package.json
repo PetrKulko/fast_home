@@ -1,12 +1,23 @@
 {
   "name": "fast_home",
+  "author": "Peter Kulko",
+  "description": "Fast home frontend Next.js application",
   "version": "0.1.0",
   "private": true,
+  "license" : "MIT",
+  "homepage": "https://github.com/PetrKulko/fast_home",
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.19",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.11.10",
@@ -18,5 +29,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.0"
   }
 }
